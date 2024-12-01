@@ -3,11 +3,11 @@
 import { BookCoverData } from "@/types";
 
 const colorOptions = [
-  { bg: "bg-yellow-200", text: "text-yellow-800", svg: "fill-yellow-800" },
-  { bg: "bg-green-200", text: "text-green-800", svg: "fill-green-800" },
-  { bg: "bg-blue-200", text: "text-blue-800", svg: "fill-blue-800" },
-  { bg: "bg-red-200", text: "text-red-800", svg: "fill-red-800" },
-  { bg: "bg-purple-200", text: "text-purple-800", svg: "fill-purple-800" },
+  { bg: "bg-yellow-200", text: "text-yellow-800", svg: "fill-yellow-800 text-yellow-800" },
+  { bg: "bg-green-200", text: "text-green-800", svg: "fill-green-800 text-green-800" },
+  { bg: "bg-blue-200", text: "text-blue-800", svg: "fill-blue-800 text-blue-800" },
+  { bg: "bg-red-200", text: "text-red-800", svg: "fill-red-800 text-red-800" },
+  { bg: "bg-purple-200", text: "text-purple-800", svg: "fill-purple-800 text-purple-800" },
 ];
 
 interface InputPanelProps {

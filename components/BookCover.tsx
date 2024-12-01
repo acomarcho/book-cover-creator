@@ -24,24 +24,31 @@ export default function BookCover({ bookData }: BookCoverProps) {
     <div className="flex flex-col gap-4">
       <div
         id="book-cover"
-        className={`aspect-[2/3] w-full max-w-md mx-auto ${bookData.backgroundColor} p-8 flex flex-col items-center justify-between`}
+        className={`w-[300px] h-[400px] mx-auto ${bookData.backgroundColor} p-8 flex flex-col items-center justify-between`}
       >
-        <div className={`${bookData.textColor} text-center`}>
-          <p className="text-xl font-medium">{bookData.author}</p>
+        <div className="flex flex-col items-center gap-2 text-center">
+          <p
+            className={`${bookData.textColor} text-lg font-bold tracking-wide uppercase`}
+          >
+            {bookData.author}
+          </p>
+          <h1
+            className={`${bookData.textColor} text-2xl font-bold tracking-wider uppercase`}
+          >
+            {bookData.title}
+          </h1>
         </div>
-        <div className="flex flex-col items-center gap-6">
+        <div className="flex flex-col items-center gap-8">
           {bookData.svg && (
             <div
-              className={`w-32 h-32 ${bookData.svgColor}`}
+              className={`w-[80px] h-[80px] ${bookData.svgColor}`}
               dangerouslySetInnerHTML={{ __html: bookData.svg }}
             />
           )}
           <div className={`${bookData.textColor} text-center`}>
-            <h1 className="text-4xl font-bold mb-2">{bookData.title}</h1>
-            <p className="text-xl">{bookData.subtitle}</p>
+            <p className="text-md leading-tight">{bookData.subtitle}</p>
           </div>
         </div>
-        <div className="h-8" /> {/* Spacer */}
       </div>
 
       <button
