@@ -3,6 +3,7 @@
 import { BookCoverData } from "@/types";
 
 const colorOptions = [
+  // Light modes
   {
     bg: "bg-yellow-100",
     text: "text-yellow-900",
@@ -44,8 +45,10 @@ const colorOptions = [
     text: "text-indigo-900",
     svg: "fill-indigo-900 text-indigo-900",
   },
+
+  // Dark modes
   {
-    bg: "bg-gray-800",
+    bg: "bg-gray-900",
     text: "text-gray-100",
     svg: "fill-gray-100 text-gray-100",
   },
@@ -55,9 +58,34 @@ const colorOptions = [
     svg: "fill-slate-100 text-slate-100",
   },
   {
+    bg: "bg-zinc-900",
+    text: "text-zinc-100",
+    svg: "fill-zinc-100 text-zinc-100",
+  },
+  {
+    bg: "bg-neutral-900",
+    text: "text-neutral-100",
+    svg: "fill-neutral-100 text-neutral-100",
+  },
+  {
+    bg: "bg-stone-900",
+    text: "text-stone-100",
+    svg: "fill-stone-100 text-stone-100",
+  },
+  {
     bg: "bg-blue-900",
     text: "text-blue-100",
     svg: "fill-blue-100 text-blue-100",
+  },
+  {
+    bg: "bg-indigo-900",
+    text: "text-indigo-100",
+    svg: "fill-indigo-100 text-indigo-100",
+  },
+  {
+    bg: "bg-violet-900",
+    text: "text-violet-100",
+    svg: "fill-violet-100 text-violet-100",
   },
   {
     bg: "bg-purple-900",
@@ -65,11 +93,51 @@ const colorOptions = [
     svg: "fill-purple-100 text-purple-100",
   },
   {
+    bg: "bg-fuchsia-900",
+    text: "text-fuchsia-100",
+    svg: "fill-fuchsia-100 text-fuchsia-100",
+  },
+  {
+    bg: "bg-pink-900",
+    text: "text-pink-100",
+    svg: "fill-pink-100 text-pink-100",
+  },
+  {
+    bg: "bg-rose-900",
+    text: "text-rose-100",
+    svg: "fill-rose-100 text-rose-100",
+  },
+  {
     bg: "bg-green-900",
     text: "text-green-100",
     svg: "fill-green-100 text-green-100",
   },
+  {
+    bg: "bg-emerald-900",
+    text: "text-emerald-100",
+    svg: "fill-emerald-100 text-emerald-100",
+  },
+  {
+    bg: "bg-teal-900",
+    text: "text-teal-100",
+    svg: "fill-teal-100 text-teal-100",
+  },
+  {
+    bg: "bg-cyan-900",
+    text: "text-cyan-100",
+    svg: "fill-cyan-100 text-cyan-100",
+  },
   { bg: "bg-red-900", text: "text-red-100", svg: "fill-red-100 text-red-100" },
+  {
+    bg: "bg-orange-900",
+    text: "text-orange-100",
+    svg: "fill-orange-100 text-orange-100",
+  },
+  {
+    bg: "bg-amber-900",
+    text: "text-amber-100",
+    svg: "fill-amber-100 text-amber-100",
+  },
 ];
 
 interface InputPanelProps {
@@ -133,9 +201,9 @@ export default function InputPanel({ bookData, setBookData }: InputPanelProps) {
           Color Scheme
         </label>
         <div className="flex gap-2 flex-wrap">
-          {colorOptions.map((color) => (
+          {colorOptions.map((color, idx) => (
             <button
-              key={color.bg}
+              key={idx}
               onClick={() =>
                 setBookData({
                   ...bookData,
