@@ -41,7 +41,7 @@ export default function BookCover({ bookData }: BookCoverProps) {
         <div className="flex flex-col items-center gap-8">
           {bookData.svg && (
             <div
-              className={`w-[80px] h-[80px] ${bookData.svgColor}`}
+              className={`w-[120px] h-[120px] ${bookData.svgColor}`}
               dangerouslySetInnerHTML={{
                 __html: bookData.svg.replace(/(width|height)="[^"]*"/g, ""),
               }}

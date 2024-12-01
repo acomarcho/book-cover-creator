@@ -11,9 +11,9 @@ export default function Home() {
     title: "",
     subtitle: "",
     svg: "",
-    backgroundColor: "bg-yellow-200",
-    textColor: "text-yellow-800",
-    svgColor: "fill-yellow-800",
+    backgroundColor: "bg-yellow-100",
+    textColor: "text-yellow-900",
+    svgColor: "fill-yellow-900 text-yellow-900",
   });
 
   return (
