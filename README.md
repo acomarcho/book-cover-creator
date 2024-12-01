@@ -2,6 +2,11 @@
 
 A web-based tool that helps you create simple, minimalistic book covers, built with Next.js and TypeScript.
 
+![image](https://github.com/user-attachments/assets/ca96397a-89ae-42f0-94a1-e1b84d6d0ebf)
+
+![image](https://github.com/user-attachments/assets/20046f8c-e818-4643-b9ce-720e0818f479)
+
+
 ## Features
 
 - Create professional-looking book covers with customizable elements
