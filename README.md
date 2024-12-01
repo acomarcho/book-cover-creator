@@ -1,11 +1,14 @@
-# PNG to SVG Converter
+# Book Cover Creator
 
-A web-based tool that converts PNG images to SVG format, built with Next.js and TypeScript.
+A web-based tool that helps you create simple, minimalistic book covers, built with Next.js and TypeScript.
 
 ## Features
 
-- Upload PNG images and convert them to SVG format
-- Real-time conversion using server-side API
+- Create professional-looking book covers with customizable elements
+- Add title, author, and subtitle text
+- Insert custom SVG icons and graphics
+- Choose from multiple color schemes (light and dark modes)
+- Export covers as PNG images
 - Modern, responsive interface built with Tailwind CSS
 - TypeScript support for enhanced development experience
 
@@ -14,7 +17,7 @@ A web-based tool that converts PNG images to SVG format, built with Next.js and 
 - [Next.js](https://nextjs.org/) - React framework for production
 - [TypeScript](https://www.typescriptlang.org/) - Static typing for JavaScript
 - [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
-- Server-side API for image conversion
+- [html2canvas](https://html2canvas.hertzen.com/) - HTML to canvas rendering
 
 ## Getting Started
 
