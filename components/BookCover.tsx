@@ -42,7 +42,9 @@ export default function BookCover({ bookData }: BookCoverProps) {
           {bookData.svg && (
             <div
               className={`w-[80px] h-[80px] ${bookData.svgColor}`}
-              dangerouslySetInnerHTML={{ __html: bookData.svg }}
+              dangerouslySetInnerHTML={{
+                __html: bookData.svg.replace(/(width|height)="[^"]*"/g, ""),
+              }}
             />
           )}
           <div className={`${bookData.textColor} text-center`}>
