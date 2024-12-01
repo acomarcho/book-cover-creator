@@ -13,12 +13,21 @@ export default function BookCover({ bookData }: BookCoverProps) {
     const coverElement = document.getElementById("book-cover");
     if (!coverElement) return;
 
+    // Sanitize title and author for filename
+    const safeTitle = bookData.title.replace(/[^a-z0-9]/gi, "-").toLowerCase();
+    const safeAuthor = bookData.author
+      .replace(/[^a-z0-9]/gi, "-")
+      .toLowerCase();
+
+    // Create filename
+    const filename = `book-cover-${safeTitle}-by-${safeAuthor}.png`;
+
     const canvas = await html2canvas(coverElement);
     const link = document.createElement("a");
-    link.download = "book-cover.png";
+    link.download = filename;
     link.href = canvas.toDataURL();
     link.click();
-  }, []);
+  }, [bookData.title, bookData.author]);
 
   return (
     <div className="flex flex-col gap-4">
